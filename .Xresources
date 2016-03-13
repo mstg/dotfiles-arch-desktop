@@ -1,0 +1,21 @@
+Xft.dpi: 180
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+xterm*termName: xterm-256color
+XTerm*locale: true
+xterm*borderWidth: 0
+
+rofi.font: dejavu sans 12 
+rofi.bg: #181818
+rofi.fg: #FFFFFF
+rofi.hlbg: #585858
+rofi.bc: #181818
+rofi.hlbg-active: #585858
+rofi.fg-active: #383838
+rofi.opacity: 80

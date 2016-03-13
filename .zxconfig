@@ -1,0 +1,9 @@
+[zx]
+background=0x181818
+border_color=0x7F8C8D
+border=0
+floating=0
+font_color=0xFFFFFF
+daemon=1
+height=20
+font=-*-dejavu sans-medium-r-*-*-11-*-*-*-*-*-microsoft-*
