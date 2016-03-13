@@ -32,8 +32,6 @@ GREEN="#2ECC71"
 sc1=""
 sc2=""
 
-~/.i3/shige_check
-
 while :; do
     DTIME=$(date +"%d-%m-%Y %H:%M")
     sc2="%{c}$DTIME"
