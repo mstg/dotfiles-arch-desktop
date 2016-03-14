@@ -18,6 +18,7 @@ set $mod Mod4
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
+font pango:Terminus 8
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -178,9 +179,9 @@ bindsym $mod+i exec --no-startup-id rofi -show filemanager -o 0
 #client.focused_inactive #e0e0e0 #e0e0e0 #2C3E50 #484e50
 #client.unfocused #7F8C8D #7F8C8D #FFFFFF #292d2e
 
-client.focused #181818 #181818 #FFFFFF #2e9ef4
-client.focused_inactive #383838 #383838 #FFFFFF #484e50
-client.unfocused #b8b8b8 #b8b8b8 #FFFFFF #292d2e
+client.focused #181818 #181818 #FFFFFF #181818
+client.focused_inactive #383838 #383838 #FFFFFF #181818
+client.unfocused #b8b8b8 #b8b8b8 #FFFFFF #181818
 
 focus_follows_mouse yes
 
@@ -189,5 +190,5 @@ workspace_layout tabbed
 exec --no-startup-id /etc/init.d/razer_bcd start
 bindsym --release button2 move scratchpad
 bindsym $mod+plus exec --no-startup-id killall -USR1 zx
-font -*-dejavu sans-medium-r-*-*-11-*-*-*-*-*-*-*
+#font -*-dejavu sans-medium-r-*-*-11-*-*-*-*-*-*-*
 exec --no-startup-id compton --config ~/.config/compton.conf -b

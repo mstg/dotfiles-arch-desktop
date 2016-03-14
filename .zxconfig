@@ -6,4 +6,6 @@ floating=0
 font_color=0xFFFFFF
 daemon=1
 height=20
-font=-*-dejavu sans-medium-r-*-*-11-*-*-*-*-*-microsoft-*
+#font=-*-dejavu sans-medium-r-*-*-11-*-*-*-*-*-microsoft-*
+font=Terminus 4
+font_type=pango

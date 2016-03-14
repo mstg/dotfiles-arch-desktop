@@ -8,7 +8,8 @@ zx -x 1920
 
 scf1="/tmp/lemonbar_sc1"
 scf2="/tmp/lemonbar_sc2"
-font="-*-dejavu sans-medium-r-*-*-11-*-*-*-*-*-microsoft-*"
+#font="-*-dejavu sans-medium-r-*-*-11-*-*-*-*-*-microsoft-*"
+font="Terminus:style=Regular"
 
 if [ -f $scf1 ]; then
     rm $scf1
@@ -31,8 +32,6 @@ GREEN="#2ECC71"
 
 sc1=""
 sc2=""
-
-~/.i3/shige_check
 
 while :; do
     DTIME=$(date +"%d-%m-%Y %H:%M")
