@@ -10,6 +10,8 @@ scf1="/tmp/lemonbar_sc1"
 scf2="/tmp/lemonbar_sc2"
 #font="-*-dejavu sans-medium-r-*-*-11-*-*-*-*-*-microsoft-*"
 font="Terminus:style=Regular"
+font2="FontAwesome:style=Regular"
+lock=$(echo -e "\uf023")
 
 if [ -f $scf1 ]; then
     rm $scf1
@@ -45,7 +47,7 @@ while :; do
 
     title_s="%{c}($title)"
 
-    sc1="%{l}[$user, $release] $title_s %{r}"
+    sc1="%{l}[$user, $release] $title_s %{r}%{F$RED}%{A:/usr/bin/lock/lock:}$lock%{A} %{F--} - "
 
     if [ $mutestate == "off" ]; then
         sc1+="%{F$RED}$volume"
@@ -58,5 +60,5 @@ while :; do
     echo $sc1 > $scf1
 done &
 
-tail -f $scf1 | lemonbar -p -B $BG -g 1920x20 -f "$font" &
+tail -f $scf1 | lemonbar -p -B $BG -g 1920x20 -f "$font" -f "$font2" | sh &
 tail -f $scf2 | lemonbar -p -B $BG -g 1920x20+1920 -f "$font" &
